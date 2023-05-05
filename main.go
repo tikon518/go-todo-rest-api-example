@@ -1,14 +1,23 @@
 package main
 
 import (
+	"fmt"
+	"log"
+	"net/http"
+
 	"github.com/jmrashed/go-todo-rest-api-example/app"
 	"github.com/jmrashed/go-todo-rest-api-example/config"
 )
 
 func main() {
-	config := config.GetConfig()
+	cfg := config.GetConfig()
 
 	app := &app.App{}
-	app.Initialize(config)
-	app.Run(":3000")
+	app.Initialize(cfg)
+
+	if err := http.ListenAndServe(":8080", app.Router); err != nil {
+		log.Fatalf("failed to start server: %v", err)
+	} else {
+		fmt.Println("Project running ...")
+	}
 }

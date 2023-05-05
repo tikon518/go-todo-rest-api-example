@@ -9,14 +9,16 @@ It is a just simple tutorial or example for making simple RESTful API with Go us
 go get github.com/jmrashed/go-todo-rest-api-example
 ```
 
+visit docker [jmrashed/go-todo-rest-api-example](https://hub.docker.com/r/jmrashed/go-todo-rest-api-example)
+
 Before running API server, you should set the database config with yours or set the your database config with my values on [config.go](https://github.com/jmrashed/go-todo-rest-api-example/blob/master/config/config.go)
 ```go
 func GetConfig() *Config {
 	return &Config{
 		DB: &DBConfig{
 			Dialect:  "mysql",
-			Username: "guest",
-			Password: "Guest0000!",
+			Username: "root",
+			Password: "password",
 			Name:     "todoapp",
 			Charset:  "utf8",
 		},
