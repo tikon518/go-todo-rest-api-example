@@ -1,4 +1,4 @@
-module todoapp
+module shopify
 
 go 1.20
 
