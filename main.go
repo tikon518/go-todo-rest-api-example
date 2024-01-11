@@ -11,7 +11,6 @@ import (
 
 func main() {
 	cfg := config.GetConfig()
-
 	app := &app.App{}
 	app.Initialize(cfg)
 

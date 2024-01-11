@@ -29,6 +29,7 @@ func (a *App) Initialize(config *config.Config) {
 		config.DB.Charset)
 
 	db, err := gorm.Open(config.DB.Dialect, dbURI)
+
 	if err != nil {
 		log.Fatal("Could not connect database")
 	}
