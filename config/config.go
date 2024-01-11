@@ -18,10 +18,10 @@ func GetConfig() *Config {
 	return &Config{
 		DB: &DBConfig{
 			Dialect:  "mysql",
-			Host:     "103.195.49.199",
+			Host:     "127.0.0.1",
 			Port:     5589,
 			Username: "dbadmin",
-			Password: "aXa#iMH*US%*Jzfkr",
+			Password: "helloworld",
 			Name:     "shopify",
 			Charset:  "utf8",
 		},

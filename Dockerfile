@@ -22,10 +22,10 @@ EXPOSE 8080
 
 # Set the environment variables for the database connection
 ENV DB_DIALECT=mysql \
-    DB_HOST=103.195.49.199 \
+    DB_HOST=127.0.0.1 \
     DB_PORT=5589 \
     DB_USER=dbadmin \
-    DB_PASSWORD=aXa#iMH*US%*Jzfkr \
+    DB_PASSWORD=helloworld \
     DB_NAME=shopify \
     DB_CHARSET=utf8mb4
 
