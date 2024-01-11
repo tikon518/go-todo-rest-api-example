@@ -23,10 +23,10 @@ EXPOSE 8080
 # Set the environment variables for the database connection
 ENV DB_DIALECT=mysql \
     DB_HOST=127.0.0.1 \
-    DB_PORT=5589 \
-    DB_USER=dbadmin \
-    DB_PASSWORD=helloworld \
-    DB_NAME=shopify \
+    DB_PORT=3306 \
+    DB_USER=welcome \
+    DB_PASSWORD=password \
+    DB_NAME=todoapp \
     DB_CHARSET=utf8mb4
 
 # Start the application
